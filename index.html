@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="./img/credit-card-favicon.png"
+      type="image/svg+xml"
+    />
+    <link rel="preload" href="./style.css" as="style" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Animated Credit Card Input</title>
+  </head>
+  <body>
+    <main class="container">
+      <div id="card-front" class="card-bg">
+        <input type="text" maxlength="19" />
+
+        <div>
+          <div>
+            <label for="card-holder">Cardholder</label>
+            <input type="text" id="card-holder" maxlength="9" />
+          </div>
+
+          <div>
+            <label for="card-valid">Expires</label>
+            <input type="text" id="card-valid" maxlength="5" />
+          </div>
+        </div>
+      </div>
+
+      <div id="card-back" class="card-bg">
+        <div class="bg-gray"></div>
+        <div>
+          <input type="text" maxlength="3" data-cvv />
+        </div>
+      </div>
+
+      <div class="infos">
+        <h1>Digite os dados do seu cartão</h1>
+
+        <label for="infos-number">Número do cartão</label>
+        <input type="infos-text" id="infos-number" maxlength="16" />
+
+        <label for="infos-name">Nome impresso no cartão</label>
+        <input type="infos-text" id="infos-name" />
+
+        <label>Validade</label>
+        <div id="infos-valid">
+          <select name="infos-month" id="infos-month" required>
+            <option value="" disabled selected>mm</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+
+          <select name="infos-year" id="infos-year" required>
+            <option value="" disabled selected>aa</option>
+            <option data-ano value=""></option>
+            <option data-ano value=""></option>
+            <option data-ano value=""></option>
+            <option data-ano value=""></option>
+          </select>
+        </div>
+
+        <label for="infos-cvv">Código de verificação</label>
+        <input type="text" id="infos-cvv" maxlength="3" />
+      </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
