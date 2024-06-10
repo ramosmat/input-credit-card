@@ -1,17 +1,18 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 30px 20px;
   height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #1f2937;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1,
 h2,
 h3,
+h4,
 label,
 p {
   margin: 0;

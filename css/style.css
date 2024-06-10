@@ -1,3 +1,9 @@
 @import "./global.css";
 @import "./container.css";
-@import "./card.css";
+
+/* Card */
+@import "./card-front.css";
+@import "./card-back.css";
+
+/* Form */
+@import "./form.css";

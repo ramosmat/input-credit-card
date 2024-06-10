@@ -1,0 +1,49 @@
+/* #card-back {
+  display: none;
+} */
+
+.card-back-bg {
+  box-sizing: border-box;
+  box-shadow: 3px 3px 10px #36383f;
+
+  background: linear-gradient(to right, #595959, #030712 40%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+
+  width: 280px;
+  height: 160px;
+  padding: 40px 0 10px;
+  border-radius: 10px;
+}
+
+.bg-gray {
+  height: 40px;
+  background: #a9a9a9;
+  width: 100%;
+}
+
+.cvv {
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cvv span:first-child {
+  content: "";
+  display: inline-block;
+  background: url("../img/dino-svg.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+}
+
+.cvv span:last-child {
+  padding: 5px 15px;
+  border: 2px solid #4968b5;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+}
