@@ -9,15 +9,8 @@
       href="./img/credit-card-favicon.png"
       type="image/svg+xml"
     />
-    <link rel="preload" href="./style.css" as="style" />
-    <link rel="stylesheet" href="./style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -25,32 +18,39 @@
   </head>
   <body>
     <main class="container">
-      <div id="card-front" class="card-bg">
-        <input type="text" maxlength="19" />
+      <div id="card-front" class="card-front-bg">
+        <h4>Dino Card</h4>
 
-        <div>
-          <div>
-            <label for="card-holder">Cardholder</label>
-            <input type="text" id="card-holder" maxlength="9" />
+        <span>XXXX-XXXX-XXXX-XXXX</span>
+
+        <div class="card-footer">
+          <div class="cardholder">
+            <p>Cardholder</p>
+            <span>XXXX XXXX</span>
           </div>
 
-          <div>
-            <label for="card-valid">Expires</label>
-            <input type="text" id="card-valid" maxlength="5" />
+          <div class="valid">
+            <p>Expires</p>
+            <div>
+              <span>mm</span>
+              <span>/</span>
+              <span>dd</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="card-back" class="card-bg">
+      <div id="card-back" class="card-back-bg">
         <div class="bg-gray"></div>
-        <div>
-          <input type="text" maxlength="3" data-cvv />
+        <div class="cvv">
+          <span></span>
+          <span>XXX</span>
         </div>
       </div>
 
-      <div class="infos">
-        <h1>Digite os dados do seu cartão</h1>
+      <h1>Digite os dados do seu cartão</h1>
 
+      <form class="infos">
         <label for="infos-number">Número do cartão</label>
         <input type="infos-text" id="infos-number" maxlength="16" />
 
@@ -86,7 +86,7 @@
 
         <label for="infos-cvv">Código de verificação</label>
         <input type="text" id="infos-cvv" maxlength="3" />
-      </div>
+      </form>
     </main>
 
     <script src="./js/script.js"></script>

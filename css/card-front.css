@@ -1,0 +1,52 @@
+/* #card-front {
+  display: none;
+} */
+
+.card-front-bg {
+  box-sizing: border-box;
+  box-shadow: 3px 3px 10px #36383f;
+  background: linear-gradient(to right, #595959, #030712 40%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+
+  width: 280px;
+  height: 160px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.card-front-bg > h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-front-bg > h4::after {
+  content: "";
+  display: inline-block;
+  background: url("../img/dino-svg.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+}
+
+.card-front-bg > span {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-align: center;
+  background: none;
+  padding: 5px 10px;
+  border: 1px solid #4968b5;
+  border-radius: 7px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.valid p,
+.valid span {
+  text-align: end;
+}
