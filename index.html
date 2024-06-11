@@ -18,38 +18,42 @@
   </head>
   <body>
     <main class="container">
-      <div id="card-front" class="card-front-bg">
-        <h4>Dino Card</h4>
+      <div class="card">
+        <div class="card-wrapper">
+          <div id="card-front" class="card-side card-front-bg">
+            <h4>Dino Card</h4>
 
-        <div class="card-number">
-          <span>xxxx</span>
-          <span>xxxx</span>
-          <span>xxxx</span>
-          <span>xxxx</span>
-        </div>
+            <div class="card-number">
+              <span>xxxx</span>
+              <span>xxxx</span>
+              <span>xxxx</span>
+              <span>xxxx</span>
+            </div>
 
-        <div class="card-footer">
-          <div class="cardholder">
-            <p>Cardholder</p>
-            <span>Seu nome aqui</span>
-          </div>
+            <div class="card-footer">
+              <div class="cardholder">
+                <p>Cardholder</p>
+                <span>Seu nome aqui</span>
+              </div>
 
-          <div class="validity">
-            <p>Expires</p>
-            <div>
-              <span>mm</span>
-              <span>/</span>
-              <span>dd</span>
+              <div class="validity">
+                <p>Expires</p>
+                <div>
+                  <span>mm</span>
+                  <span>/</span>
+                  <span>dd</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div id="card-back" class="card-back-bg">
-        <div class="bg-gray"></div>
-        <div class="cvv">
-          <span></span>
-          <span>000</span>
+          <div id="card-back" class="card-side card-back-bg hidden">
+            <div class="bg-gray"></div>
+            <div class="cvv">
+              <span></span>
+              <span>000</span>
+            </div>
+          </div>
         </div>
       </div>
 

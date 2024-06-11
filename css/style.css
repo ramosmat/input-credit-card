@@ -2,6 +2,7 @@
 @import "./container.css";
 
 /* Card */
+@import "./card-flip.css";
 @import "./card-front.css";
 @import "./card-back.css";
 

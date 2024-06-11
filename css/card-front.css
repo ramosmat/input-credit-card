@@ -1,6 +1,6 @@
-/* #card-front {
+#card-front.hidden {
   display: none;
-} */
+}
 
 .card-front-bg {
   box-sizing: border-box;
