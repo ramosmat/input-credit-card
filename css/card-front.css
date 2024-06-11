@@ -8,7 +8,7 @@
   background: linear-gradient(to right, #595959, #030712 40%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   color: white;
 
   width: 280px;
@@ -21,6 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.125rem;
 }
 
 .card-front-bg > h4::after {

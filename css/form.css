@@ -1,0 +1,33 @@
+.infos {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+  gap: 10px;
+}
+
+.infos form {
+  display: flex;
+  flex-direction: column;
+}
+
+.infos label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.infos input,
+.infos select {
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+}
+
+.infos-valid {
+  display: flex;
+  gap: 5px;
+}
+
+.infos-valid select {
+  flex: 1;
+  flex-basis: 200;
+}
