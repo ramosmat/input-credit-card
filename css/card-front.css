@@ -3,6 +3,7 @@
 }
 
 .card-front-bg {
+  cursor: pointer;
   box-sizing: border-box;
   box-shadow: 3px 3px 10px #36383f;
   background: linear-gradient(to right, #595959, #030712 40%);
