@@ -1,30 +1,17 @@
 export default function cardNumber() {
   const numberInput = document.getElementById("infos-number");
-  const numbers = document.querySelectorAll(".card-number span");
+  const number = document.querySelectorAll(".card-number span");
 
-  numberInput.addEventListener("input", () => {
+  numberInput.addEventListener("input", (event) => {
     const input = numberInput.value;
-    const inputLength = input.length;
 
     if (input === "") {
-      numbers.forEach((number) => (number.innerText = "xxxx"));
+      number.forEach((number) => (number.innerText = "xxxx-xxxx-xxxx-xxxx"));
     } else {
-      switch (true) {
-        case inputLength <= 4:
-          numbers[0].innerText = input;
+      // script to add "-" every 4 numbers
+      let formattedInput = input.replace(/(\d{4})(?=\d)/g, "$1-");
 
-        case inputLength <= 8:
-          numbers[1].innerText = input.slice(4);
-
-        case inputLength <= 12:
-          numbers[2].innerText = input.slice(8);
-
-        case inputLength > 12:
-          numbers[3].innerText = input.slice(12);
-
-        default:
-          break;
-      }
+      number[0].innerText = formattedInput;
     }
   });
 }
