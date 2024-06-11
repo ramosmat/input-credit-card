@@ -48,45 +48,47 @@
         </div>
       </div>
 
-      <h1>Digite os dados do seu cartão</h1>
+      <div class="infos">
+        <h1>Digite os dados do seu cartão</h1>
 
-      <form class="infos">
-        <label for="infos-number">Número do cartão</label>
-        <input type="infos-text" id="infos-number" maxlength="16" />
+        <form>
+          <label for="infos-number">Número do cartão</label>
+          <input type="number" id="infos-number" maxlength="16" />
 
-        <label for="infos-name">Nome impresso no cartão</label>
-        <input type="infos-text" id="infos-name" />
+          <label for="infos-name">Nome impresso no cartão</label>
+          <input type="text" id="infos-name" />
 
-        <label>Validade</label>
-        <div id="infos-valid">
-          <select name="infos-month" id="infos-month" required>
-            <option value="" disabled selected>mm</option>
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-            <option value="05">05</option>
-            <option value="06">06</option>
-            <option value="07">07</option>
-            <option value="08">08</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-          </select>
+          <label>Validade</label>
+          <div class="infos-valid">
+            <select name="infos-month" id="infos-month" required>
+              <option value="" disabled selected>mm</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
 
-          <select name="infos-year" id="infos-year" required>
-            <option value="" disabled selected>aa</option>
-            <option data-ano value=""></option>
-            <option data-ano value=""></option>
-            <option data-ano value=""></option>
-            <option data-ano value=""></option>
-          </select>
-        </div>
+            <select name="infos-year" id="infos-year" required>
+              <option value="" disabled selected>yy</option>
+              <option data-ano value=""></option>
+              <option data-ano value=""></option>
+              <option data-ano value=""></option>
+              <option data-ano value=""></option>
+            </select>
+          </div>
 
-        <label for="infos-cvv">Código de verificação</label>
-        <input type="text" id="infos-cvv" maxlength="3" />
-      </form>
+          <label for="infos-cvv">Código de verificação</label>
+          <input type="number" id="infos-cvv" maxlength="3" />
+        </form>
+      </div>
     </main>
 
     <script src="./js/script.js"></script>
