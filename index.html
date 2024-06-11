@@ -9,8 +9,8 @@
       href="./img/credit-card-favicon.png"
       type="image/svg+xml"
     />
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" /> -->
 
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -21,15 +21,20 @@
       <div id="card-front" class="card-front-bg">
         <h4>Dino Card</h4>
 
-        <span>XXXX-XXXX-XXXX-XXXX</span>
+        <div class="card-number">
+          <span>xxxx</span>
+          <span>xxxx</span>
+          <span>xxxx</span>
+          <span>xxxx</span>
+        </div>
 
         <div class="card-footer">
           <div class="cardholder">
             <p>Cardholder</p>
-            <span>XXXX XXXX</span>
+            <span>Seu nome aqui</span>
           </div>
 
-          <div class="valid">
+          <div class="validity">
             <p>Expires</p>
             <div>
               <span>mm</span>
@@ -44,7 +49,7 @@
         <div class="bg-gray"></div>
         <div class="cvv">
           <span></span>
-          <span>XXX</span>
+          <span>000</span>
         </div>
       </div>
 
@@ -53,13 +58,18 @@
 
         <form>
           <label for="infos-number">Número do cartão</label>
-          <input type="number" id="infos-number" maxlength="16" />
+          <input
+            type="number"
+            id="infos-number"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            maxlength="16"
+          />
 
           <label for="infos-name">Nome impresso no cartão</label>
           <input type="text" id="infos-name" />
 
           <label>Validade</label>
-          <div class="infos-valid">
+          <div class="infos-validity">
             <select name="infos-month" id="infos-month" required>
               <option value="" disabled selected>mm</option>
               <option value="01">01</option>
@@ -78,19 +88,22 @@
 
             <select name="infos-year" id="infos-year" required>
               <option value="" disabled selected>yy</option>
-              <option data-ano value=""></option>
-              <option data-ano value=""></option>
-              <option data-ano value=""></option>
-              <option data-ano value=""></option>
             </select>
           </div>
 
           <label for="infos-cvv">Código de verificação</label>
-          <input type="number" id="infos-cvv" maxlength="3" />
+          <input
+            type="number"
+            id="infos-cvv"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            minlength="3"
+            maxlength="3"
+            required
+          />
         </form>
       </div>
     </main>
 
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>

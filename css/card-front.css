@@ -11,7 +11,7 @@
   gap: 20px;
   color: white;
 
-  width: 280px;
+  width: 270px;
   height: 160px;
   padding: 10px 30px;
   border-radius: 10px;
@@ -32,14 +32,26 @@
   height: 30px;
 }
 
-.card-front-bg > span {
-  letter-spacing: 1px;
-  font-size: 1rem;
-  text-align: center;
+.card-number {
   background: none;
   padding: 5px 10px;
   border: 1px solid #4968b5;
   border-radius: 7px;
+  text-align: center;
+}
+
+.card-number > span {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+.card-number > span:nth-child(even)::before,
+.card-number > span:nth-child(3)::before {
+  content: "-";
+  display: inline-block;
+  padding-right: 3px;
 }
 
 .card-footer {
@@ -47,7 +59,11 @@
   justify-content: space-between;
 }
 
-.valid p,
-.valid span {
+.card-footer span {
+  color: #a3a3a3;
+}
+
+.validity p,
+.validity span {
   text-align: end;
 }

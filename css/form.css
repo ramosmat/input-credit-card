@@ -1,7 +1,7 @@
 .infos {
   display: flex;
   flex-direction: column;
-  padding: 0 60px;
+  padding: 0 20px;
   gap: 10px;
 }
 
@@ -22,12 +22,15 @@
   border: 1px solid #d3d3d3;
 }
 
-.infos-valid {
+.infos-validity {
   display: flex;
   gap: 5px;
 }
 
-.infos-valid select {
+.infos-validity select {
   flex: 1;
-  flex-basis: 200;
+}
+
+.infos-validity option {
+  font-weight: 600;
 }
