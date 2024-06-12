@@ -34,3 +34,8 @@
 .infos-validity option {
   font-weight: 600;
 }
+
+.infos input[type="number"]::-webkit-outer-spin-button,
+.infos input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
